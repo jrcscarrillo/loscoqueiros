@@ -1,0 +1,162 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>Retenciones SALGRAF</title>
+        <meta name="description" content="Factura">
+        <meta name="author" content=""><link rel="shortcut icon" href="img/favicon.ico"><link rel="stylesheet" href="css/estilos.css"> 
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="all">
+        <link href="css/estilos.css" rel="stylesheet" media="all">
+        <link href="css/imprimir.css" rel="stylesheet" media="print">
+        <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+        <script src="js/modernizr-2.8.3.min.js"></script>
+    </head>
+
+    <body>
+        <div id="main-container">
+            <div class="row-fluid" id="first-container">
+                <div class="span6">
+                    <!--izquierda-->
+                    <div class="row-fluid">
+                        <div class="span6" id="logo">
+                            <h1><img src="images/logo.jpg" alt="logo"></h1>
+                        </div>
+                        <div class="span6">
+
+                        </div>
+                    </div>
+                    <div class="info-container">
+                        <h2 class="titulo" id="cia"></h2>
+                        <div class="row-fluid">
+                            <div class="span3 ochopx">Direcci&oacute;n Matriz:</div>
+                            <div class="span9 diezpx align-right"><b id="matriz"></b></div>
+                        </div>
+                        <div class="row-fluid">
+                            <div class="span3 ochopx">Direcci&oacute;n Sucursal:</div>
+                            <div class="span9 diezpx align-right"><b id="emisor"></b></div>
+                        </div>
+                        <div class="row-fluid">
+                            <div class="span5 ochopx ">Contribuyente Especial Nro:</div>
+                            <div class="span7 diezpx align-right"><b id="especial"></b></div>
+                        </div>
+                        <div class="row-fluid">
+                            <div class="span6 ochopx">OBLIGADO A LLEVAR CONTABILIDAD:</div>
+                            <div class="span6 diezpx align-right"><b id="obligado"></b></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="span6">
+                    <!--derecha-->
+                    <div class="info-container">
+                        <div class="row-fluid">
+                            <div class="span5 align-left division150"><h2>RUC</h2></div>
+                            <div class="span7 align-right division250"><h2 id="ruc"></h2></div>
+                        </div>
+                        <div class="row-fluid">
+                            <div class="span5 align-left division150"><h2>RETENCION Nro: </h2></div>
+                            <div class="span7 align-right division250"><h2 id="numeroretencion"></h2></div>
+                        </div>
+                        <div><p></p></div>
+                        <div class="row-fluid">
+                            <div id="autorizacion">- AUTORIZACION -</div>
+                        </div>
+                        <div class="row-fluid">
+                            <div class="span4 ochopx">NÚMERO: </div>
+                            <div class="span8 diezpx align-right"><b id="numeroauto"></b></div>
+                        </div>
+                        <div class="row-fluid">
+                            <div class="span4 ochopx">FECHA Y HORA: </div>
+                            <div class="span8 diezpx align-right"><b id="fechaauto"></b></div>
+                        </div>
+                        <div class="row-fluid">
+                            <div class="span4 ochopx">AMBIENTE:</div>
+                            <div class="span8 diezpx align-right"><b id="ambiente"></b></div>
+                        </div>
+                        <div class="row-fluid">
+                            <div class="span4 ochopx">EMISI&Oacute;N:</div>
+                            <div class="span8 diezpx align-right"><b id="emision"></b></div>
+                        </div>
+                        <div class="row-fluid">
+                            <div class="span12"><img src="images/codbarra.jpg"></div>
+                        </div>
+                        <div class="row-fluid">
+                            <div class="span12 diezpx" id="nro-codigo-barras"><b id="claveacceso"></b></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span1">
+                    &nbsp;
+                </div>
+                <div class="span10" id="second-container">
+                    <div class="row-fluid">
+                        <div class="span6 division350">Razón Social / Nombres y Apellidos</div>
+                        <div class="span6 division350">Identificación</div>
+                    </div>
+                    <div class="row-fluid">
+                        <div class="span6 division350" id="razon"></div>
+                        <div class="span6 division350" id="rucCliente"></div>
+                    </div>
+                    <div class="row-fluid">
+                        <div class="span6 division350">Fecha Emisión</div>
+                        <div class="span6 division350">Direccion Proveedor</div>
+                    </div>
+                    <div class="row-fluid">
+                        <div class="span6 division350" id="fechaemision"></div>
+                        <div class="span6 division350" id="direccion"></div>
+                    </div> 
+                    <div class="row-fluid" >
+                        <div class="span6 division350"></div>
+                        <div class="span6 division350" id="masdireccion"></div>
+                    </div>
+                </div>
+                <div class="span1">
+                    &nbsp;
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <table class="table table-bordered table-striped">
+                        <tr>
+                            <th class="align-center cabecerta-tabla">Comprobante</th>
+                            <th class="align-center cabecerta-tabla">Fecha Emision</th>
+                            <th class="align-center cabecerta-tabla">Ejercicio<br>Fiscal</th>
+                            <th class="align-center cabecerta-tabla">Base Imponible<br>para la retencion</th>
+                            <th class="align-center cabecerta-tabla">Impuesto</th>
+                            <th class="align-center cabecerta-tabla">Porcentaje<br>Retencion</th>
+                            <th class="align-center cabecerta-tabla">Valor Retenido</th>
+                        </tr>
+                        <tr>
+                            <td class="ochopx"></td>
+                            <td class="align-center ochopx"></td>
+                            <td class="align-center ochopx"></td>
+                            <td class="align-right ochopx"></td>
+                            <td class="align-right ochopx"></td>
+                            <td class="align-right ochopx"></td>
+                            <td class="align-right ochopx"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="span10 row-fluid">
+                <div class="span6"> </div>
+                <div class="span2" id="third-container">
+                    <b>Total Retenido</b></div>
+                <div class="span2" id="fourth-container">
+                    <b id="totalRetenido"></b>
+                </div>
+            </div>
+        </div>
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <!--[if lt IE 7 ]>
+            <script src="js/dd_belatedpng.js?v=1"></script>
+        <![endif]-->  
+    </body>
+</html>
